@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+
+    <ion-title>Eventos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Gestión de Eventos!</ion-card-title>
+    </ion-card-header>
+
+    <div id="centrar">
+      <ion-button [routerLink]="['#']" fill="solid" shape="round" id="boton" >
+        Listado de Eventos
+      </ion-button>
+
+      <ion-button [routerLink]="['#']" fill="solid" shape="round" id="boton" >
+        Crear Evento
+      </ion-button>
+
+      <ion-button [routerLink]="['#']" fill="solid" shape="round" id="boton" >
+        Editar/Eliminar Evento
+      </ion-button>
+    </div>
+   
+  </ion-card>
+</ion-content>

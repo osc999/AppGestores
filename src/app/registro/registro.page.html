@@ -1,0 +1,52 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+
+    <ion-buttons slot="start">
+        <ion-back-button></ion-back-button>
+    </ion-buttons>
+
+    <ion-title>registro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">registro</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Registro de usuario!</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-input label="nombre:" labelPlacement="floating" type="nom" name="nom" [(ngModel)]="nom" placeholder="Ingrese nombre.." ></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-input label="direccion:" labelPlacement="floating" type="dire" name="dire" [(ngModel)]="dire" placeholder="Ingrese direccion.." ></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-input label="email:" labelPlacement="floating" type="email" name="email" [(ngModel)]="email" placeholder="Ingrese email.." ></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-input label="contrasena:" labelPlacement="floating" type="password" name="contrasena" [(ngModel)]="contrasena" placeholder="Ingrese contraseña.." ></ion-input>
+        </ion-item>
+      </ion-list>      
+    </ion-card-content>
+
+    <div id="centrar">
+      <ion-button [routerLink]="['/inicio']" fill="solid" shape="round" id="boton">
+        Registrarse
+      </ion-button>
+    </div>
+   
+  </ion-card>
+
+</ion-content>

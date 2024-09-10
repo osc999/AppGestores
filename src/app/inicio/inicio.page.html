@@ -1,0 +1,19 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>inicio</ion-title>
+    <div id="boton" slot="end" size="small" >
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-img [src]="['/assets/img/eventoimagen.jpg']"></ion-img>
+    </ion-card-header>
+    <div id="centrar">
+      <ion-button routerLink="/login" id="boton" >Iniciar sesion </ion-button>
+      <ion-button routerLink="/registro" id="boton" >Registrarse</ion-button>
+    </div>
+  </ion-card>
+</ion-content>
